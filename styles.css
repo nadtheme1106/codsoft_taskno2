@@ -1,0 +1,220 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FEE715;
+    color: #333;
+}
+
+header .logo img {
+    max-width: 120px; 
+    height: auto; 
+}
+
+.container {
+    width: 900%;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #101820;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .contact-info {
+    font-size: 0.9rem;
+}
+
+
+.hero {
+    background: url('pexels-anna-nekrashevich-8532762.jpg') no-repeat center center/cover;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.hero .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.hero .btn:hover {
+    background-color: #e7336a;
+}
+
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: #FEE715;
+    text-align: center;
+}
+
+.services .service-item {
+    max-width: 280px;
+}
+
+.services h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.services p {
+    font-size: 0.95rem;
+}
+
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #FEE715;
+}
+
+.about-us .about-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-us .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.our-services {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.our-services .service {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.our-services .service img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.our-services h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #FEE715;
+}
+
+footer .social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social li a {
+    color: #FEE715;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .services, .our-services {
+        flex-direction: column;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}
